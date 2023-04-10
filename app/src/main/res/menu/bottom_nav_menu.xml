@@ -5,19 +5,13 @@
         android:id="@+id/accounts"
         android:icon="@drawable/ic_home"
         android:enabled="true"
-        android:title="@string/title_accounts" />
-
-    <item
-        android:id="@+id/trade"
-        android:icon="@drawable/ic_dashboard"
-        android:enabled="true"
-        android:title="@string/title_trade" />
+        android:title="@string/title_home" />
 
     <item
         android:id="@+id/markets"
         android:icon="@drawable/ic_alert"
         android:enabled="true"
-        android:title="@string/title_markets" />
+        android:title="@string/title_transactions" />
 
     <item
         android:id="@+id/performances"
