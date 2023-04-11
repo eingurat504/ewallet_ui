@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Accounts</string>
+    <string name="app_name">Ewallet UI</string>
     <string name="tab_text_1">Open</string>
     <string name="tab_text_2">Pending</string>
     <string name="tab_text_3">Closed</string>
