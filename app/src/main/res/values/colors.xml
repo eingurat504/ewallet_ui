@@ -15,6 +15,7 @@
     <color name="tab_layout_background">#E8E9EB</color>
     <color name="white">#FFFFFFFF</color>
     <color name="balance_color">#000000</color>
+    <color name="grey_color">#E8E9EB</color>
 
 
     <color name="orange_color">#ffcf01</color>
