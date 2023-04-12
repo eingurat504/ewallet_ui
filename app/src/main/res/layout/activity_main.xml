@@ -13,30 +13,36 @@
             android:fitsSystemWindows="true"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <androidx.appcompat.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:minHeight="?actionBarSize"
-                    android:padding="@dimen/appbar_padding"
-                    android:text="@string/app_name"
-                    android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"/>
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:minHeight="?actionBarSize"
+                        android:padding="@dimen/appbar_padding"
+                        android:text="@string/app_name"
+                        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"/>
 
-        </androidx.appcompat.widget.Toolbar>
+            </androidx.appcompat.widget.Toolbar>
 
-                <LinearLayout
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/card_gradient_background"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relative_balance"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:background="@color/tab_background_unselected"
-                    android:layout_marginRight="15dp"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/info_text"
@@ -46,21 +52,162 @@
                         android:layout_marginLeft="20dp"
                         android:text="My Balance"
                         android:textStyle="bold"
-                        android:textSize="13dp"
-                        />
+                        android:textSize="15dp" />
 
                     <TextView
                         android:id="@+id/info_t"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="45,000 UGX"
+                        android:textStyle="bold"
+                        android:textColor="@color/balance_color"
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/statistics_card"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/deposit"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="45dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ic_deposit"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/ic_deposit"/>
+
+                        <TextView
+                            android:id="@+id/e_deposit"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:text="Deposit"
+                            android:layout_toRightOf="@+id/ic_deposit"
+                            android:textColor="@color/balance_color"
+                            android:textSize="13dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/withdraw"
+                        android:layout_marginTop="12dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_toRightOf="@+id/deposit"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ic_withdraw"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/ic_withdraw"/>
+
+                        <TextView
+                            android:id="@+id/e_withdraw"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:text="Withdraw"
+                            android:layout_toRightOf="@+id/ic_withdraw"
+                            android:textColor="@color/balance_color"
+                            android:textSize="13dp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/button_1"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/card_gradient_background"
+                    android:layout_marginRight="45dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/info_text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_marginTop="20dp"
-                        android:layout_below="@+id/info_text"
-                        android:gravity="center"
-                        android:text="Standard"
+                        android:layout_marginLeft="20dp"
+                        android:text="My Balance"
                         android:textStyle="bold"
                         android:textSize="13dp"
                         />
                 </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_2"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_toRightOf="@+id/button_1"
+                    android:background="@drawable/card_gradient_background"
+                    android:layout_marginRight="45dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/info_text3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="My Balance"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_3"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/card_gradient_background"
+                    android:layout_toRightOf="@+id/button_2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/info_text4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="My Balance"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
 
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabs"
