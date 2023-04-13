@@ -256,6 +256,7 @@
                 app:tabTextColor="@color/unselected_text_color"
                 app:tabIndicatorColor="@color/black"
                 android:gravity="bottom" />
+
     </com.google.android.material.appbar.AppBarLayout>
 
         <androidx.viewpager.widget.ViewPager
