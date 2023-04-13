@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">Ewallet UI</string>
+    <string name="app_name">Ewallet</string>
     <string name="tab_text_1">Open</string>
     <string name="tab_text_2">Pending</string>
     <string name="tab_text_3">Closed</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_home">Home</string>
-    <string name="title_transactions">Transactions</string>
-    <string name="title_performance">Performance</string>
+    <string name="title_transactions">Transact</string>
+    <string name="title_borrow">Borrow</string>
     <string name="title_profile">Profile</string>
 </resources>
